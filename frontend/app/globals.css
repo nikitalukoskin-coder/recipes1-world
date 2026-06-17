@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 min-h-screen;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold 
+           shadow-md hover:shadow-lg transition-all cursor-pointer;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:scale-105;
+  }
+  
+  .btn-success {
+    @apply bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:scale-105;
+  }
+  
+  .btn-danger {
+    @apply bg-gradient-to-r from-red-500 to-rose-500 text-white hover:scale-105;
+  }
+  
+  .card {
+    @apply bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden 
+           shadow-md hover:shadow-xl transition-all duration-300 
+           transform hover:-translate-y-1;
+  }
+  
+  .card-header {
+    @apply h-32 bg-gradient-to-r from-amber-400 to-orange-500 
+           flex items-center justify-center text-5xl;
+  }
+  
+  .card-body {
+    @apply p-5;
+  }
+  
+  .card-title {
+    @apply text-xl font-bold text-gray-800 mb-1;
+  }
+  
+  .card-subtitle {
+    @apply text-sm text-gray-500 mb-2;
+  }
+  
+  .card-actions {
+    @apply flex gap-2 p-3 border-t border-gray-100 bg-gray-50;
+  }
+  
+  .action-btn {
+    @apply flex-1 flex items-center justify-center gap-2 py-2 rounded-lg 
+           text-sm font-medium transition-all cursor-pointer;
+  }
+  
+  .view-btn {
+    @apply bg-sky-100 text-sky-700 hover:bg-sky-200;
+  }
+  
+  .edit-btn {
+    @apply bg-orange-100 text-orange-700 hover:bg-orange-200;
+  }
+  
+  .delete-btn {
+    @apply bg-red-100 text-red-700 hover:bg-red-200;
+  }
+  
+  .badge {
+    @apply absolute top-3 right-3 text-xs font-bold px-2 py-1 rounded-full shadow-sm;
+  }
+  
+  .badge-popular {
+    @apply bg-amber-400 text-amber-900;
+  }
+  
+  .badge-vegetarian {
+    @apply bg-emerald-500 text-white;
+  }
+  
+  .badge-difficulty-easy {
+    @apply bg-green-100 text-green-700;
+  }
+  
+  .badge-difficulty-medium {
+    @apply bg-yellow-100 text-yellow-700;
+  }
+  
+  .badge-difficulty-hard {
+    @apply bg-red-100 text-red-700;
+  }
+  
+  .detail-container {
+    @apply max-w-4xl mx-auto px-4;
+  }
+  
+  .detail-card {
+    @apply bg-white rounded-2xl shadow-xl overflow-hidden;
+  }
+  
+  .detail-header {
+    @apply h-48 bg-gradient-to-r from-amber-400 to-orange-500 
+           flex items-center justify-center text-7xl;
+  }
+  
+  .detail-content {
+    @apply p-6 md:p-8;
+  }
+  
+  .detail-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-800 mb-2;
+  }
+  
+  .detail-subtitle {
+    @apply text-gray-500 mb-4 flex items-center gap-1;
+  }
+  
+  .detail-info {
+    @apply bg-gray-50 rounded-xl p-4 mb-6;
+  }
+  
+  .info-row {
+    @apply flex py-2 border-b border-gray-200 last:border-b-0;
+  }
+  
+  .info-label {
+    @apply w-32 font-semibold text-gray-700;
+  }
+  
+  .info-value {
+    @apply text-gray-600 flex items-center gap-1;
+  }
+  
+  .detail-section {
+    @apply border-t border-gray-200 pt-6 mb-6;
+  }
+  
+  .detail-section-title {
+    @apply text-xl font-semibold text-gray-700 mb-3;
+  }
+  
+  .btn-back {
+    @apply inline-flex items-center gap-1 text-amber-600 mb-6 hover:gap-2 transition-all;
+  }
+  
+  .btn-edit {
+    @apply inline-flex items-center gap-2 bg-blue-500 text-white px-6 py-2 
+           rounded-full font-medium hover:bg-blue-600 transition;
+  }
+  
+  .grid-cards {
+    @apply grid gap-6;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-cards {
+      @apply grid-cols-2;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-cards {
+      @apply grid-cols-3;
+    }
+  }
+}
