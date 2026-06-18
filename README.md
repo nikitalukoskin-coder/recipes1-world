@@ -60,7 +60,7 @@ npm
 
 Клонирование репозитория
 
-git clone https://github.com/nikitalukoskin-coder/recipes-world.git
+git clone https://github.com/nikitalukoskin-coder/recipes1-world.git
 cd recipes-world
 
 Запуск бэкенда
