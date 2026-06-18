@@ -4,7 +4,7 @@ import { useState, useEffect, use } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FiArrowLeft, FiClock, FiEdit2 } from "react-icons/fi";
-import { GiCookingPot, GiKnifeFork } from "react-icons/gi";
+import { GiCookingPot, GiKnifeFork } from "react-icons/gi"; 
 import { api } from "@/lib/api";
 import { Recipe, Cuisine } from "@/types";
 
