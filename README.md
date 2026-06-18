@@ -66,7 +66,9 @@ cd recipes-world
 Запуск бэкенда
 
 cd backend
+
 npm install
+
 npm run dev
 
 Сервер запустится на http://localhost:4000
@@ -74,7 +76,9 @@ npm run dev
 Запуск фронтенда
 
 cd frontend
+
 npm install
+
 npm run dev
 
 Приложение запустится на http://localhost:3000
