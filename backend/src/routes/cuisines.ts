@@ -8,7 +8,7 @@ import {
   searchCuisines
 } from "../controllers/cuisinesController";
 import { validate, cuisineSchema } from "../middleware/validation";
-
+ 
 const router = Router();
 
 router.get("/", getAllCuisines);
