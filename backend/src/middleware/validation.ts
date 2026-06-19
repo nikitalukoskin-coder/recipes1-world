@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { z } from "zod";
-
+ 
 export const cuisineSchema = z.object({
   name: z.string().min(2, "Название минимум 2 символа"),
   country: z.string().min(2, "Страна минимум 2 символа"),

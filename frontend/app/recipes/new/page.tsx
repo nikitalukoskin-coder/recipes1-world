@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { api } from "@/lib/api";
-import { Cuisine } from "@/types";
+import { Cuisine } from "@/types"; 
 
 export default function NewRecipePage() {
   const router = useRouter();

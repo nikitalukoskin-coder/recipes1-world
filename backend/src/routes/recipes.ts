@@ -8,7 +8,7 @@ import {
   searchRecipes
 } from "../controllers/recipesController";
 import { validate, recipeSchema } from "../middleware/validation";
-
+ 
 const router = Router();
 
 router.get("/", getAllRecipes);

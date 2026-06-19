@@ -1,6 +1,9 @@
 Recipes World — Кулинарный проект
+
 Автор: Лукошкин Никита Владиславович
+
 Группа: ИСП-9.19
+
 Практика
 
 Краткое описание проекта
@@ -8,7 +11,6 @@ Recipes World — это клиент-серверное веб-приложен
 
 Предметная область: Рецепты и кухни мира .
 
-Выбор архитектуры (Вариант А)
 В проекте выбран Вариант А — раздельные фронтенд и бэкенд.
 
 Обоснование выбора:
@@ -21,6 +23,7 @@ Recipes World — это клиент-серверное веб-приложен
 
 Технологический стек
 Фронтенд
+
 Next.js 16 
 
 TypeScript 
@@ -30,6 +33,7 @@ Tailwind CSS
 React Icons 
 
 Бэкенд
+
 Node.js 18+ 
 
 Express.js 
@@ -39,32 +43,46 @@ TypeScript
 CORS 
 
 Хранилище данных
+
 In-memory — данные хранятся в массивах в памяти процесса
 
 Инициализация — при старте сервера заполняется тестовыми данными (5 кухонь, 15 рецептов)
 
 Установка и запуск
+
 Требования
+
 Node.js 18+
+
 npm
 
 Клонирование репозитория
-git clone https://github.com/ваш-логин/recipes-world.git
+
+git clone https://github.com/nikitalukoskin-coder/recipes1-world.git
 cd recipes-world
 
 Запуск бэкенда
+
 cd backend
+
 npm install
+
 npm run dev
+
 Сервер запустится на http://localhost:4000
 
 Запуск фронтенда
+
 cd frontend
+
 npm install
+
 npm run dev
+
 Приложение запустится на http://localhost:3000
 
 API Эндпоинты
+
 Кухни (Cuisines)
 Метод	Путь	Назначение
 GET	/api/cuisines	Получить список всех кухонь (с пагинацией)
@@ -143,9 +161,6 @@ PUT /api/cuisines/:id – Обновить кухню
   "description": "Средиземноморская кухня",
   "isPopular": true
 }
-
-DELETE /api/cuisines/:id – Удалить кухню
-Ответ: 204 No Content (удаляет также все рецепты этой кухни)
 
 DELETE /api/cuisines/:id – Удалить кухню
 Ответ: 204 No Content (удаляет также все рецепты этой кухни)

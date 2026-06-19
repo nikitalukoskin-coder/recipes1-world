@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, use } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"; 
 import Link from "next/link";
 import { api } from "@/lib/api";
 import { Cuisine } from "@/types";
