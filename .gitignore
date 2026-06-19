@@ -1,0 +1,37 @@
+# Зависимости
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Переменные окружения
+.env
+.env.local
+.env*.local
+frontend/.env
+frontend/.env.local
+backend/.env
+backend/.env.local
+
+# Логи
+*.log
+npm-debug.log*
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Редакторы
+.vscode/
+.idea/
+
+# Сборки
+.next/
+frontend/.next/
+dist/
+backend/dist/
+out/
